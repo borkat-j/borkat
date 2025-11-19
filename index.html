@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>borkat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+```
+    body {
+        background-color: #000000;
+        color: #cccccc;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        line-height: 1.8;
+        padding: 60px 40px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 80px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .logo {
+        font-weight: bold;
+        color: #ff0000;
+        font-size: 24px;
+        text-decoration: none;
+    }
+
+    nav {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    nav a {
+        color: #cccccc;
+        text-decoration: none;
+        margin-left: 30px;
+    }
+
+    nav a:hover {
+        color: #ffffff;
+    }
+
+    .subscribe-section {
+        margin-bottom: 80px;
+        padding-bottom: 60px;
+        border-bottom: 1px solid #333;
+    }
+
+    .subscribe-section input {
+        background-color: #000000;
+        border: 1px solid #cccccc;
+        color: #cccccc;
+        padding: 12px 16px;
+        font-size: 16px;
+        width: 300px;
+        max-width: 100%;
+        margin-right: 10px;
+    }
+
+    .subscribe-section button {
+        background-color: #000000;
+        border: 1px solid #cccccc;
+        color: #cccccc;
+        padding: 12px 24px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .subscribe-section button:hover {
+        background-color: #111;
+    }
+
+    .post {
+        margin-bottom: 80px;
+    }
+
+    .post h2 {
+        color: #ffffff;
+        font-weight: bold;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .post p {
+        color: #cccccc;
+        margin-bottom: 15px;
+    }
+
+    .read-more {
+        color: #cccccc;
+        text-decoration: underline;
+        cursor: pointer;
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .read-more:hover {
+        color: #ffffff;
+    }
+
+    .full-content {
+        display: none;
+    }
+
+    @media (max-width: 600px) {
+        body {
+            padding: 40px 20px;
+        }
+
+        header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        nav a {
+            margin-left: 0;
+            margin-right: 20px;
+        }
+
+        .subscribe-section input {
+            width: 100%;
+            margin-bottom: 10px;
+            margin-right: 0;
+        }
+
+        .subscribe-section button {
+            width: 100%;
+        }
+    }
+</style>
+```
+
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">borkat</a>
+        <nav>
+            <a href="archive.html">Archive</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </nav>
+    </header>
+
+```
+<div class="subscribe-section">
+    <input type="email" placeholder="Enter your email">
+    <button>Subscribe</button>
+</div>
+
+<div class="post">
+    <h2>When You Truly Work for Yourself</h2>
+    <div class="excerpt">
+        <p>The difference between working for yourself and working for someone else isn't about who signs your paycheck. It's about who owns your decisions. When you work for yourself, every choice carries weight because you bear the full consequence.</p>
+        <span class="read-more" onclick="toggleContent(this)">Read more</span>
+    </div>
+    <div class="full-content">
+        <p>The difference between working for yourself and working for someone else isn't about who signs your paycheck. It's about who owns your decisions. When you work for yourself, every choice carries weight because you bear the full consequence.</p>
+        <p>Most people think working for yourself means freedom from constraints. In reality, it means trading artificial constraints for real ones. You're no longer constrained by office politics or arbitrary deadlines, but by market forces and your own ability to execute.</p>
+        <p>The entrepreneur who truly works for themselves doesn't answer to a boss, but they answer to something more demanding: reality itself. There's no one to blame, no bureaucracy to hide behind, no comfortable salary to fall back on when things go wrong.</p>
+        <p>This is why so many people who "work for themselves" are actually working for their clients, their investors, or their own fear of failure. True independence isn't about escaping accountability—it's about choosing which accountability matters most.</p>
+        <span class="read-more" onclick="toggleContent(this)">Show less</span>
+    </div>
+</div>
+
+<div class="post">
+    <h2>Blame Yourself for Everything, and Preserve Your Agency</h2>
+    <div class="excerpt">
+        <p>The moment you blame external circumstances for your situation, you surrender your power to change it. This isn't about fairness or accuracy—it's about maintaining the only advantage you truly have: the ability to act.</p>
+        <span class="read-more" onclick="toggleContent(this)">Read more</span>
+    </div>
+    <div class="full-content">
+        <p>The moment you blame external circumstances for your situation, you surrender your power to change it. This isn't about fairness or accuracy—it's about maintaining the only advantage you truly have: the ability to act.</p>
+        <p>Yes, the economy might be terrible. Yes, your childhood might have been difficult. Yes, other people might have had unfair advantages. All of this can be simultaneously true and completely irrelevant to what you do next.</p>
+        <p>Blaming yourself for everything isn't about accepting moral responsibility for things beyond your control. It's about operational responsibility—treating every outcome as if it resulted from your choices, because that's the only mindset that leads to different choices.</p>
+        <p>The person who takes responsibility for everything has infinite room to improve. The person who blames external factors has already decided that improvement is impossible. Agency isn't a privilege you're granted—it's a stance you choose to take.</p>
+        <span class="read-more" onclick="toggleContent(this)">Show less</span>
+    </div>
+</div>
+
+<div class="post">
+    <h2>Good Products Are Hard to Vary</h2>
+    <div class="excerpt">
+        <p>A good product has a quality that's hard to articulate but easy to recognize: you can't imagine changing any part of it without making it worse. Every element feels necessary, like it emerged from some internal logic rather than arbitrary choice.</p>
+        <span class="read-more" onclick="toggleContent(this)">Read more</span>
+    </div>
+    <div class="full-content">
+        <p>A good product has a quality that's hard to articulate but easy to recognize: you can't imagine changing any part of it without making it worse. Every element feels necessary, like it emerged from some internal logic rather than arbitrary choice.</p>
+        <p>This is the physicist David Deutsch's criterion for a good explanation—it's hard to vary while still accounting for what it's supposed to account for. The same principle applies to products. A great chair isn't just comfortable; every angle, every material choice, every dimension serves the purpose in a way that alternatives wouldn't.</p>
+        <p>Bad products are easy to vary because they're assembled from disconnected decisions. You can swap features in and out, change the design, adjust the pricing—and it doesn't really matter because nothing was necessary to begin with.</p>
+        <p>When building something, the test isn't whether people like it. The test is whether you can defend every choice, whether each element would be missed if removed. If you can easily imagine a dozen versions that would work just as well, you haven't found the right answer yet.</p>
+        <span class="read-more" onclick="toggleContent(this)">Show less</span>
+    </div>
+</div>
+
+<div class="post">
+    <h2>In Most Difficult Things in Life, the Solution is Indirect</h2>
+    <div class="excerpt">
+        <p>The things worth having rarely yield to direct assault. You can't force yourself to fall asleep, can't will yourself into creativity, can't decide your way into happiness. These states arrive obliquely, as byproducts of other activities.</p>
+        <span class="read-more" onclick="toggleContent(this)">Read more</span>
+    </div>
+    <div class="full-content">
+        <p>The things worth having rarely yield to direct assault. You can't force yourself to fall asleep, can't will yourself into creativity, can't decide your way into happiness. These states arrive obliquely, as byproducts of other activities.</p>
+        <p>This is why most self-help advice fails. It treats everything as if it responds to direct effort: want to be confident? Act confident. Want to be successful? Work harder. Want to be loved? Put yourself out there. But the best things in life are emergent properties, not achievable goals.</p>
+        <p>You don't pursue happiness; you pursue activities that make you forget you're pursuing anything. You don't build confidence; you do difficult things until confidence becomes a natural byproduct. You don't find meaning; you commit to something larger than yourself and meaning finds you.</p>
+        <p>The indirect path seems inefficient, even mystical. But it's actually more reliable than the direct approach, because it works with human nature instead of against it. The direct path burns you out with effortful striving. The indirect path lets you arrive at your destination without realizing you were traveling.</p>
+        <span class="read-more" onclick="toggleContent(this)">Show less</span>
+    </div>
+</div>
+
+<script>
+    function toggleContent(element) {
+        const post = element.closest('.post');
+        const excerpt = post.querySelector('.excerpt');
+        const fullContent = post.querySelector('.full-content');
+        
+        if (fullContent.style.display === 'none' || fullContent.style.display === '') {
+            excerpt.style.display = 'none';
+            fullContent.style.display = 'block';
+        } else {
+            excerpt.style.display = 'block';
+            fullContent.style.display = 'none';
+        }
+    }
+</script>
+```
+
+</body>
+</html>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive - borkat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+```
+    body {
+        background-color: #000000;
+        color: #cccccc;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        line-height: 1.8;
+        padding: 60px 40px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 80px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .logo {
+        font-weight: bold;
+        color: #ff0000;
+        font-size: 24px;
+        text-decoration: none;
+    }
+
+    nav {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    nav a {
+        color: #cccccc;
+        text-decoration: none;
+        margin-left: 30px;
+    }
+
+    nav a:hover {
+        color: #ffffff;
+    }
+
+    .archive-item {
+        margin-bottom: 60px;
+        border-bottom: 1px solid #1a1a1a;
+        padding-bottom: 40px;
+    }
+
+    .archive-item:last-child {
+        border-bottom: none;
+    }
+
+    .archive-item h2 {
+        color: #ffffff;
+        font-weight: bold;
+        margin-bottom: 20px;
+        font-size: 24px;
+        cursor: pointer;
+        transition: color 0.2s;
+    }
+
+    .archive-item h2:hover {
+        color: #cccccc;
+    }
+
+    .archive-content {
+        display: none;
+        margin-top: 20px;
+    }
+
+    .archive-content.active {
+        display: block;
+    }
+
+    .archive-content p {
+        color: #cccccc;
+        margin-bottom: 15px;
+    }
+
+    @media (max-width: 600px) {
+        body {
+            padding: 40px 20px;
+        }
+
+        header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        nav a {
+            margin-left: 0;
+            margin-right: 20px;
+        }
+    }
+</style>
+```
+
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">borkat</a>
+        <nav>
+            <a href="archive.html">Archive</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </nav>
+    </header>
+
+```
+<div class="archive-item">
+    <h2 onclick="toggleArchive(this)">When You Truly Work for Yourself</h2>
+    <div class="archive-content">
+        <p>The difference between working for yourself and working for someone else isn't about who signs your paycheck. It's about who owns your decisions. When you work for yourself, every choice carries weight because you bear the full consequence.</p>
+        <p>Most people think working for yourself means freedom from constraints. In reality, it means trading artificial constraints for real ones. You're no longer constrained by office politics or arbitrary deadlines, but by market forces and your own ability to execute.</p>
+        <p>The entrepreneur who truly works for themselves doesn't answer to a boss, but they answer to something more demanding: reality itself. There's no one to blame, no bureaucracy to hide behind, no comfortable salary to fall back on when things go wrong.</p>
+        <p>This is why so many people who "work for themselves" are actually working for their clients, their investors, or their own fear of failure. True independence isn't about escaping accountability—it's about choosing which accountability matters most.</p>
+    </div>
+</div>
+
+<div class="archive-item">
+    <h2 onclick="toggleArchive(this)">Blame Yourself for Everything, and Preserve Your Agency</h2>
+    <div class="archive-content">
+        <p>The moment you blame external circumstances for your situation, you surrender your power to change it. This isn't about fairness or accuracy—it's about maintaining the only advantage you truly have: the ability to act.</p>
+        <p>Yes, the economy might be terrible. Yes, your childhood might have been difficult. Yes, other people might have had unfair advantages. All of this can be simultaneously true and completely irrelevant to what you do next.</p>
+        <p>Blaming yourself for everything isn't about accepting moral responsibility for things beyond your control. It's about operational responsibility—treating every outcome as if it resulted from your choices, because that's the only mindset that leads to different choices.</p>
+        <p>The person who takes responsibility for everything has infinite room to improve. The person who blames external factors has already decided that improvement is impossible. Agency isn't a privilege you're granted—it's a stance you choose to take.</p>
+    </div>
+</div>
+
+<div class="archive-item">
+    <h2 onclick="toggleArchive(this)">Good Products Are Hard to Vary</h2>
+    <div class="archive-content">
+        <p>A good product has a quality that's hard to articulate but easy to recognize: you can't imagine changing any part of it without making it worse. Every element feels necessary, like it emerged from some internal logic rather than arbitrary choice.</p>
+        <p>This is the physicist David Deutsch's criterion for a good explanation—it's hard to vary while still accounting for what it's supposed to account for. The same principle applies to products. A great chair isn't just comfortable; every angle, every material choice, every dimension serves the purpose in a way that alternatives wouldn't.</p>
+        <p>Bad products are easy to vary because they're assembled from disconnected decisions. You can swap features in and out, change the design, adjust the pricing—and it doesn't really matter because nothing was necessary to begin with.</p>
+        <p>When building something, the test isn't whether people like it. The test is whether you can defend every choice, whether each element would be missed if removed. If you can easily imagine a dozen versions that would work just as well, you haven't found the right answer yet.</p>
+    </div>
+</div>
+
+<div class="archive-item">
+    <h2 onclick="toggleArchive(this)">In Most Difficult Things in Life, the Solution is Indirect</h2>
+    <div class="archive-content">
+        <p>The things worth having rarely yield to direct assault. You can't force yourself to fall asleep, can't will yourself into creativity, can't decide your way into happiness. These states arrive obliquely, as byproducts of other activities.</p>
+        <p>This is why most self-help advice fails. It treats everything as if it responds to direct effort: want to be confident? Act confident. Want to be successful? Work harder. Want to be loved? Put yourself out there. But the best things in life are emergent properties, not achievable goals.</p>
+        <p>You don't pursue happiness; you pursue activities that make you forget you're pursuing anything. You don't build confidence; you do difficult things until confidence becomes a natural byproduct. You don't find meaning; you commit to something larger than yourself and meaning finds you.</p>
+        <p>The indirect path seems inefficient, even mystical. But it's actually more reliable than the direct approach, because it works with human nature instead of against it. The direct path burns you out with effortful striving. The indirect path lets you arrive at your destination without realizing you were traveling.</p>
+    </div>
+</div>
+
+<div class="archive-item">
+    <h2 onclick="toggleArchive(this)">The Paradox of Trying</h2>
+    <div class="archive-content">
+        <p>Effort is essential, but trying too hard guarantees failure in most things that matter. The job interview where you're desperate, the conversation where you're trying to be funny, the athletic performance where you're overthinking every move—all fail for the same reason.</p>
+        <p>Peak performance requires a delicate balance: you need to care enough to prepare thoroughly, but not so much that caring becomes interference. The musician who thinks about finger placement during the concert will stumble. The writer who obsesses over every word will never finish.</p>
+        <p>This is different from not caring. It's about having done the work so thoroughly that it becomes automatic, freeing you to respond to the moment. The martial artist trains thousands of repetitions not to think during the fight, but to avoid thinking.</p>
+        <p>The secret is displacement: channel the energy of trying into preparation, then let go during execution. Train hard, perform easy. Care deeply about the process, stay detached from the outcome.</p>
+    </div>
+</div>
+
+<div class="archive-item">
+    <h2 onclick="toggleArchive(this)">Everything Is Practice for Itself</h2>
+    <div class="archive-content">
+        <p>We tell ourselves we're practicing for some future moment when it will really count. But there is no future moment. This is the moment. Every repetition is the real thing disguised as preparation.</p>
+        <p>The way you do anything is the way you do everything, not as a moral judgment but as a simple fact about habit formation. Your brain doesn't distinguish between practice and performance. Every action cuts a groove, creates a pattern, builds a default behavior.</p>
+        <p>This is why half-hearted practice is worse than no practice. You're not just failing to improve—you're actively training yourself in sloppy execution. The basketball player who doesn't follow through on practice shots won't suddenly start following through in games.</p>
+        <p>Treat every moment as if it counts, because it does. Not for some external scoreboard, but for who you're becoming. You're always practicing something. Make sure it's what you actually want to be good at.</p>
+    </div>
+</div>
+
+<div class="archive-item">
+    <h2 onclick="toggleArchive(this)">Legibility Is a Trap</h2>
+    <div class="archive-content">
+        <p>Society rewards things that are easy to measure, easy to compare, easy to verify. Degrees over self-education. Titles over competence. Credentials over capability. This creates a systematic bias toward the legible at the expense of the valuable.</p>
+        <p>The problem isn't that legible achievements are worthless—it's that they're systematically overvalued. Everyone can see them, so everyone competes for them, driving up the cost and driving down the return. Meanwhile, illegible skills go underdeveloped and undercompensated.</p>
+        <p>The person who can write code is legible. The person who knows which code to write is not. The person with a prestigious degree is legible. The person who can learn anything they need is not. The person who ships on schedule is legible. The person who knows what to ship is not.</p>
+        <p>Build illegible skills. They're harder to acquire, impossible to fake, and rare enough to be valuable. Most importantly, you'll face less competition because most people are competing on the legible dimensions.</p>
+    </div>
+</div>
+
+<div class="archive-item">
+    <h2 onclick="toggleArchive(this)">You Cannot Negotiate With Entropy</h2>
+    <div class="archive-content">
+        <p>Everything tends toward disorder. Your health without maintenance, your relationships without attention, your skills without practice, your possessions without care. This isn't pessimism—it's thermodynamics.</p>
+        <p>People act surprised when things fall apart, as if maintenance-free existence was the default and decay an aberration. But decay is the default. Order is the aberration, achievable only through constant energy input.</p>
+        <p>This is why "I'll get to it eventually" is a decision to let something die. Eventually means never, because entropy doesn't wait. The relationship you'll repair later, the skill you'll refresh when needed, the health you'll address when symptoms appear—all will be worse later than they are now.</p>
+        <p>You don't need to maintain everything. But you need to consciously choose what to maintain and what to let decay, because decay will choose for you if you don't. The only question is whether you make that decision deliberately or by default.</p>
+    </div>
+</div>
+
+<div class="archive-item">
+    <h2 onclick="toggleArchive(this)">Strong Opinions, Weakly Held Is Terrible Advice</h2>
+    <div class="archive-content">
+        <p>The problem with "strong opinions, weakly held" is that it makes certainty costless. You get to be confidently wrong about everything, then pivot when proven incorrect, all while claiming intellectual humility.</p>
+        <p>Real intellectual honesty requires calibration. If you're 60% confident, say you're 60% confident. If you're 95% confident, say you're 95% confident. Your level of conviction should match your actual evidence, not your personality or speaking style.</p>
+        <p>Strong opinions weakly held trains you to be overconfident by default, then patch the problem with a willingness to change. But the willingness to change doesn't erase the cost of being confidently wrong in the meantime—the decisions made, the people influenced, the resources committed.</p>
+        <p>Better advice: have calibrated opinions, honestly held. Be exactly as confident as your evidence warrants. This is harder, less charismatic, and actually useful.</p>
+    </div>
+</div>
+
+<div class="archive-item">
+    <h2 onclick="toggleArchive(this)">The Cost of Delayed Decisions</h2>
+    <div class="archive-content">
+        <p>Every decision you delay has a cost, even if you pretend not deciding is free. The job opportunity while you're still "keeping your options open," the relationship while you're "seeing how it goes," the business idea while you're "waiting for the right time."</p>
+        <p>Not deciding is itself a decision. It's a decision to let circumstances decide for you, to drift rather than steer. Sometimes that's appropriate—not every decision deserves active deliberation. But most people default to delay when they should be deciding.</p>
+        <p>The paradox is that quick decisions often lead to better outcomes than delayed ones, even when the delayed decision uses more information. Because information has diminishing returns while opportunity cost grows linearly. The first 20% of information often contains 80% of the decision-relevant insight.</p>
+        <p>Make reversible decisions quickly. Make irreversible decisions carefully but not slowly. And when you realize you're delaying because you're afraid of commitment, not because you need more information, that's your signal to decide now.</p>
+    </div>
+</div>
+
+<div class="archive-item">
+    <h2 onclick="toggleArchive(this)">Why Smart People Defend Bad Ideas</h2>
+    <div class="archive-content">
+        <p>Intelligence makes it easier to defend bad ideas because intelligence gives you more tools for rationalization. The smarter you are, the more sophisticated arguments you can construct, the more evidence you can selectively interpret, the more elegant theories you can build on faulty foundations.</p>
+        <p>This is why the smartest people often hold some of the most obviously wrong beliefs. They're not dumb enough to accept simple refutations. They can patch every hole, counter every objection, reframe every contradiction until their bad idea becomes a complex intellectual edifice.</p>
+        <p>The antidote isn't to be less intelligent. It's to be more honest about when you're reasoning versus when you're rationalizing. Reasoning starts with a question and follows the evidence. Rationalizing starts with a conclusion and manufactures support.</p>
+        <p>Ask yourself: am I trying to figure out if this is true, or trying to figure out how to make it sound true? The difference is everything.</p>
+    </div>
+</div>
+
+<div class="archive-item">
+    <h2 onclick="toggleArchive(this)">Status Games Are Zero Sum, Value Creation Is Not</h2>
+    <div class="archive-content">
+        <p>Most of what looks like competition is actually status competition, and status is fundamentally zero-sum. If everyone is high status, no one is. Your gain in relative standing requires someone else's loss.</p>
+        <p>Value creation is different. When you make something genuinely useful, the world has more value than before. There's no corresponding loss. The person who builds a better tool hasn't made existing tools worse; they've expanded what's possible.</p>
+        <p>The tragedy is that status games are more visible and more immediately rewarding than value creation. You can see exactly where you rank. You get clear feedback about your standing. Value creation is messy, uncertain, and often takes years to show returns.</p>
+        <p>Most people waste their highest leverage years playing status games because the feedback loop is tighter. But status games have a ceiling—eventually you're competing with the best, and the returns diminish. Value creation has no ceiling. There's always room for more value in the world.</p>
+    </div>
+</div>
+
+<div class="archive-item">
+    <h2 onclick="toggleArchive(this)">The Map Is Not the Territory, But We Treat It Like It Is</h2>
+    <div class="archive-content">
+        <p>We know intellectually that models aren't reality, but we forget constantly. The economic model isn't the economy. The business plan isn't the business. The org chart isn't the organization. But we make decisions as if the map were the territory.</p>
+        <p>This error is so common because maps are useful. They simplify, they clarify, they make the complex graspable. The problem comes when we start optimizing for the map instead of the territory—hitting arbitrary metrics while ignoring actual outcomes, following the process while missing the point.</p>
+        <p>The best operators hold models lightly. They use frameworks as starting points, not constraints. They're willing to throw out the map when it stops corresponding to the territory. This looks sloppy to people who confuse following the map with competent navigation.</p>
+        <p>Reality always wins over models eventually. The question is whether you update your map before you drive off a cliff, or after.</p>
+    </div>
+</div>
+
+<div class="archive-item">
+    <h2 onclick="toggleArchive(this)">Busy Is a Decision, Not a Condition</h2>
+    <div class="archive-content">
+        <p>When someone says they're too busy, what they mean is: this isn't a priority. That's fine—not everything should be a priority. But calling it "busy" obscures the actual decision being made.</p>
+        <p>Everyone has the same amount of time. The person who claims to be too busy for something has found time for other things. They've decided, consciously or unconsciously, that those other things matter more.</p>
+        <p>Busy is often a status signal or a defense mechanism. It signals importance: look how in-demand I am, how many responsibilities I have. It defends against requests: I would help, but I'm too busy, implying the limitation is external rather than chosen.</p>
+        <p>Try replacing "I'm too busy" with "that's not a priority for me." It's more honest, and it forces you to confront what you're actually choosing. Sometimes that's uncomfortable. Good—discomfort is the feeling of seeing clearly.</p>
+    </div>
+</div>
+
+<div class="archive-item">
+    <h2 onclick="toggleArchive(this)">Advice Is Autobiography</h2>
+    <div class="archive-content">
+        <p>When someone gives you advice, they're not describing universal truth—they're describing what worked for them in their specific circumstances. Their personality, their resources, their moment in time, their risk tolerance, their alternatives.</p>
+        <p>This is why successful people's advice is often useless or even harmful. The tech founder who says "just focus on product" had engineering skills and worked in a different market environment. The investor who says "be patient" already had capital. The writer who says "write what you love" had savings and no dependents.</p>
+        <p>The problem isn't that they're lying. The problem is that success makes their specific path look like the only path, when it was actually just one path among many possible paths.</p>
+        <p>Take advice as data about what worked for someone else, not instructions for what you should do. Ask what was true about their situation that might not be true about yours. The best advisors start by understanding your context before prescribing solutions.</p>
+    </div>
+</div>
+
+<div class="archive-item">
+    <h2 onclick="toggleArchive(this)">The Compounding Returns of Small Advantages</h2>
+    <div class="archive-content">
+        <p>A small advantage, consistently applied, becomes enormous over time. Being 1% better every day means being 37 times better in a year. But most people underestimate compound effects because they're linear thinkers in an exponential world.</p>
+        <p>This works in both directions. Small daily improvements compound into mastery. Small daily neglects compound into crisis. The difference between growth and decay often comes down to marginal choices that seem inconsequential in isolation.</p>
+        <p>The challenge is that compounding is invisible in the early stages. For months or years, it feels like nothing is happening. The person who reads 30 minutes daily doesn't feel smarter after a week. The person who exercises 20 minutes daily doesn't look different after a month.</p>
+        <p>This is why most people quit before compounding kicks in. They're evaluating on a linear timescale what only makes sense on an exponential one. The trick is to focus on the process, not the results, until the results become unavoidable.</p>
+    </div>
+</div>
+
+<div class="archive-item">
+    <h2 onclick="toggleArchive(this)">Constraints Make You Creative</h2>
+    <div class="archive-content">
+        <p>Unlimited resources produce mediocre work. When you can do anything, you rarely do anything interesting. Constraints force you to solve problems creatively because the obvious solutions aren't available.</p>
+        <p>The musician with a limited number of instruments invents new techniques. The writer with a word limit cuts ruthlessly to the essential. The startup with no funding finds scrappy solutions that scale better than the obvious expensive approach.</p>
+        <p>This is why the most innovative work often comes from people who lack resources, not from those who have them. Resources let you throw money at problems. Constraints force you to think around them.</p>
+        <p>If you're stuck, try adding constraints rather than removing them. Give yourself less time, less budget, fewer options. Counter-intuitive, but it works. The constraint becomes a focusing force, eliminating the infinite possibility space that leads to paralysis.</p>
+    </div>
+</div>
+
+<div class="archive-item">
+    <h2 onclick="toggleArchive(this)">The Difference Between Complicated and Complex</h2>
+    <div class="archive-content">
+        <p>Complicated systems have many parts, but they're fundamentally predictable. A car engine is complicated—thousands of components, but if you understand how each piece works, you understand the whole.</p>
+        <p>Complex systems have emergent properties that can't be understood by analyzing the components. The economy, the weather, human psychology—all complex. You can't predict them by understanding the parts because the whole is more than the sum.</p>
+        <p>People treat complex systems like they're merely complicated. They think if they just gather enough data, build a detailed enough model, they'll be able to predict and control outcomes. This never works. Complex systems are inherently unpredictable beyond certain timescales.</p>
+        <p>Better to navigate complex systems with principles: redundancy over optimization, resilience over efficiency, adaptation over prediction. Stop trying to predict the unpredictable. Instead, position yourself to benefit from volatility rather than be destroyed by it.</p>
+    </div>
+</div>
+
+<div class="archive-item">
+    <h2 onclick="toggleArchive(this)">What You Practice Is What You Get</h2>
+    <div class="archive-content">
+        <p>People practice the wrong things constantly, then wonder why they're not improving. The writer who practices polishing first drafts instead of generating ideas. The entrepreneur who practices pitching instead of building. The athlete who practices comfortable movements instead of weak points.</p>
+        <p>Practice doesn't make perfect—practice makes permanent. Whatever you repeat becomes automatic. If you practice sloppy technique, you'll automate sloppiness. If you practice avoiding difficulty, you'll automate avoidance.</p>
+        <p>The key is deliberate practice: identifying weaknesses, designing exercises that target them specifically, getting feedback, adjusting. This is uncomfortable because you're constantly working at the edge of your ability. That's the point.</p>
+        <p>Most people practice what they're already good at because it feels good to succeed. But that's not practice—that's performance. Real practice feels like controlled failure, over and over, until it doesn't.</p>
+    </div>
+</div>
+
+<div class="archive-item">
+    <h2 onclick="toggleArchive(this)">The Asymmetry of Information and Understanding</h2>
+    <div class="archive-content">
+        <p>More information doesn't automatically produce more understanding. Sometimes it produces less. Information is cheap and abundant; understanding is expensive and rare.</p>
+        <p>This is why reading more books doesn't make you wiser. Following more news doesn't make you informed. Taking more courses doesn't make you skilled. Information accumulation without synthesis is just noise.</p>
+        <p>Understanding requires compression: finding the pattern that explains many facts, the principle that generates many examples, the mental model that predicts many situations. This is active, effortful, and can't be crowdsourced.</p>
+        <p>Stop collecting information as if understanding will automatically follow. Start with a question, gather only the information needed to answer it, compress that information into principles, test those principles against reality. Then move to the next question.</p>
+    </div>
+</div>
+
+<div class="archive-item">
+    <h2 onclick="toggleArchive(this)">Why Most Feedback Is Useless</h2>
+    <div class="archive-content">
+        <p>Feedback is only useful if the person giving it has better judgment than you about the specific thing they're evaluating. Otherwise, it's just noise, and averaging over noise doesn't produce signal.</p>
+        <p>This is why most "user feedback" is misleading. Users can tell you what they like and don't like, but they can't tell you what would make your product better. That requires understanding tradeoffs, constraints, and second-order effects they can't see.</p>
+        <p>The same applies to any creative work. Your audience can tell you if something resonates, but they can't tell you how to fix what doesn't resonate. They don't have the craft knowledge to diagnose problems or propose solutions.</p>
+        <p>Seek feedback from people who are better at what you're doing than you are. Ignore feedback from people who aren't. This sounds obvious but most people do the opposite—they seek validation from peers and avoid judgment from experts.</p>
+    </div>
+</div>
+
+<script>
+    function toggleArchive(element) {
+        const content = element.nextElementSibling;
+        const allContents = document.querySelectorAll('.archive-content');
+        
+        // Close all other items
+        allContents.forEach(item => {
+            if (item !== content) {
+                item.classList.remove('active');
+            }
+        });
+        
+        // Toggle current item
+        content.classList.toggle('active');
+    }
+</script>
+```
+
+</body>
+</html>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writings - borkat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+```
+    body {
+        background-color: #000000;
+        color: #cccccc;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        line-height: 1.8;
+        padding: 60px 40px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 80px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .logo {
+        font-weight: bold;
+        color: #ff0000;
+        font-size: 24px;
+        text-decoration: none;
+    }
+
+    nav {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    nav a {
+        color: #cccccc;
+        text-decoration: none;
+        margin-left: 30px;
+    }
+
+    nav a:hover {
+        color: #ffffff;
+    }
+
+    .writing-item {
+        margin-bottom: 60px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #1a1a1a;
+    }
+
+    .writing-item:last-child {
+        border-bottom: none;
+    }
+
+    .writing-item h2 {
+        color: #ffffff;
+        font-weight: bold;
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+
+    .writing-item p {
+        color: #cccccc;
+        margin-bottom: 10px;
+    }
+
+    .writing-meta {
+        color: #666;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+        body {
+            padding: 40px 20px;
+        }
+
+        header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        nav a {
+            margin-left: 0;
+            margin-right: 20px;
+        }
+    }
+</style>
+```
+
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">borkat</a>
+        <nav>
+            <a href="archive.html">Archive</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </nav>
+    </header>
+
+```
+<div class="writing-item">
+    <h2>The Nature of Technical Debt</h2>
+    <p>Technical debt isn't just messy code. It's the accumulation of shortcuts, the cost of speed over correctness, the price of learning by doing. Every system accumulates debt because every system is built by humans making imperfect decisions with incomplete information.</p>
+    <div class="writing-meta">5 min read</div>
+</div>
+
+<div class="writing-item">
+    <h2>On Building in Public</h2>
+    <p>There's something uncomfortable about sharing unfinished work. You expose yourself to criticism before you've had time to refine, to polish, to make your ideas defensible. But that discomfort is exactly why building in public works—it forces you to confront reality earlier.</p>
+    <div class="writing-meta">7 min read</div>
+</div>
+
+<div class="writing-item">
+    <h2>The Illusion of Passive Income</h2>
+    <p>Passive income doesn't exist. What exists is income from assets that took massive upfront work to create. The rental property required capital and deals. The course required expertise and production. The investment portfolio required learning and capital.</p>
+    <div class="writing-meta">4 min read</div>
+</div>
+
+<div class="writing-item">
+    <h2>Why Process Fails</h2>
+    <p>Organizations love process because it promises to make outcomes repeatable and quality consistent. But process captures the form of success without its substance. It codifies what worked once, in specific circumstances, with specific people, then applies it universally.</p>
+    <div class="writing-meta">6 min read</div>
+</div>
+
+<div class="writing-item">
+    <h2>The Problem with Productivity Systems</h2>
+    <p>Productivity systems promise to make you efficient, organized, in control. They deliver something else: the illusion of progress through the act of organizing rather than doing. You spend time perfecting your system instead of doing the work the system was meant to enable.</p>
+    <div class="writing-meta">5 min read</div>
+</div>
+
+<div class="writing-item">
+    <h2>Leverage and Risk Are the Same Thing</h2>
+    <p>Leverage amplifies outcomes. That's what makes it powerful and dangerous. The same tool that turns small wins into large gains turns small losses into catastrophes. Most people want the upside of leverage without accepting the downside, which is like wanting fire without heat.</p>
+    <div class="writing-meta">8 min read</div>
+</div>
+
+<div class="writing-item">
+    <h2>The Value of Being Wrong Quickly</h2>
+    <p>Being right slowly is often worse than being wrong quickly. Quick mistakes are cheap lessons. Slow mistakes are expensive delusions. The person who fails fast learns what doesn't work and moves on. The person who fails slowly invests more and more into defending a bad decision.</p>
+    <div class="writing-meta">4 min read</div>
+</div>
+
+<div class="writing-item">
+    <h2>Why Smart People Make Bad Hires</h2>
+    <p>Smart people hire based on credentials and interviews because that's what legible evaluation looks like. But credentials measure past achievement, and interviews measure interview performance. Neither predicts job performance.</p>
+    <div class="writing-meta">6 min read</div>
+</div>
+
+<div class="writing-item">
+    <h2>The Myth of Work-Life Balance</h2>
+    <p>Work-life balance suggests work and life are separate accounts to be balanced, as if time spent on one is stolen from the other. This framing makes people feel guilty about working hard and resentful about personal obligations.</p>
+    <div class="writing-meta">5 min read</div>
+</div>
+
+<div class="writing-item">
+    <h2>Optimization Is Fragile</h2>
+    <p>Optimized systems are efficient in predictable environments and catastrophically fragile in unpredictable ones. Every efficiency removes slack. Slack is what absorbs shocks, accommodates variation, allows adaptation.</p>
+    <div class="writing-meta">7 min read</div>
+</div>
+
+<div class="writing-item">
+    <h2>The Curse of the First Version</h2>
+    <p>First versions become sacred. They establish patterns that later versions inherit, not because those patterns were optimal but because they were first. This is path dependence: early choices constrain later options, even when better alternatives emerge.</p>
+    <div class="writing-meta">6 min read</div>
+</div>
+
+<div class="writing-item">
+    <h2>Why Meetings Multiply</h2>
+    <p>Meetings multiply because they feel productive without requiring actual production. You talk about work instead of doing work, create the appearance of collaboration without the difficulty of execution.</p>
+    <div class="writing-meta">4 min read</div>
+</div>
+```
+
+</body>
+</html>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes - borkat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+```
+    body {
+        background-color: #000000;
+        color: #cccccc;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        line-height: 1.8;
+        padding: 60px 40px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 80px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .logo {
+        font-weight: bold;
+        color: #ff0000;
+        font-size: 24px;
+        text-decoration: none;
+    }
+
+    nav {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    nav a {
+        color: #cccccc;
+        text-decoration: none;
+        margin-left: 30px;
+    }
+
+    nav a:hover {
+        color: #ffffff;
+    }
+
+    .note {
+        color: #cccccc;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #1a1a1a;
+    }
+
+    .note:last-child {
+        border-bottom: none;
+    }
+
+    @media (max-width: 600px) {
+        body {
+            padding: 40px 20px;
+        }
+
+        header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        nav a {
+            margin-left: 0;
+            margin-right: 20px;
+        }
+    }
+</style>
+```
+
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">borkat</a>
+        <nav>
+            <a href="archive.html">Archive</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </nav>
+    </header>
+
+```
+<div class="note">The quality of your questions determines the quality of your answers.</div>
+
+<div class="note">What you pay attention to becomes your reality.</div>
+
+<div class="note">People don't resist change—they resist being changed.</div>
+
+<div class="note">The best time to solve a problem is before it becomes urgent.</div>
+
+<div class="note">Your habits are votes for the type of person you want to become.</div>
+
+<div class="note">Clarity comes from action, not thought.</div>
+
+<div class="note">The obstacle isn't in your way—it is the way.</div>
+
+<div class="note">Most regrets come from inaction, not failure.</div>
+
+<div class="note">You can't think your way out of problems you behaved your way into.</div>
+
+<div class="note">The best revenge is no longer needing it.</div>
+
+<div class="note">Discipline is choosing between what you want now and what you want most.</div>
+
+<div class="note">The map of the world you carry in your head is not the world itself.</div>
+
+<div class="note">What's measured improves, but not everything that matters can be measured.</div>
+
+<div class="note">The person who says it can't be done should get out of the way of the person doing it.</div>
+
+<div class="note">Your energy level determines which problems you can solve.</div>
+
+<div class="note">Most people would rather be right than effective.</div>
+
+<div class="note">The bottleneck is always at the top of the bottle.</div>
+
+<div class="note">If it's not a hell yes, it's a no.</div>
+
+<div class="note">You don't rise to the level of your goals—you fall to the level of your systems.</div>
+
+<div class="note">The hard part isn't having ideas—it's choosing which ones to ignore.</div>
+
+<div class="note">Sustainable pace beats intermittent intensity.</div>
+
+<div class="note">What got you here won't get you there.</div>
+
+<div class="note">Most problems are interpersonal problems in disguise.</div>
+
+<div class="note">The person who knows how will always have a job, but the person who knows why will be their boss.</div>
+
+<div class="note">You can't selectively numb emotions—when you numb the painful ones, you also numb joy.</div>
+
+<div class="note">The difference between who you are and who you want to be is what you do.</div>
+
+<div class="note">Speed matters more than perfection when you're learning.</div>
+
+<div class="note">Your assumptions are invisible until someone questions them.</div>
+
+<div class="note">The best leaders make themselves unnecessary.</div>
+
+<div class="note">What you tolerate sets your actual standards.</div>
+
+<div class="note">Most advice is just autobiography.</div>
+
+<div class="note">The person who multitasks is doing multiple things poorly.</div>
+
+<div class="note">Complexity is a hiding place for mediocrity.</div>
+
+<div class="note">You can't build a reputation on what you're going to do.</div>
+
+<div class="note">The only way out is through.</div>
+
+<div class="note">Information is not understanding, and understanding is not wisdom.</div>
+
+<div class="note">The present is the only time you can actually do anything.</div>
+
+<div class="note">Most people overestimate what they can do in a day and underestimate what they can do in a year.</div>
+
+<div class="note">Your behavior reveals your actual priorities, not your stated ones.</div>
+
+<div class="note">The cost of a thing is the amount of life you exchange for it.</div>
+```
+
+</body>
+</html>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter - borkat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+```
+    body {
+        background-color: #000000;
+        color: #cccccc;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        line-height: 1.8;
+        padding: 60px 40px;
+        max-width: 800px;
+        margin: 0 auto;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 80px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .logo {
+        font-weight: bold;
+        color: #ff0000;
+        font-size: 24px;
+        text-decoration: none;
+    }
+
+    nav {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    nav a {
+        color: #cccccc;
+        text-decoration: none;
+        margin-left: 30px;
+    }
+
+    nav a:hover {
+        color: #ffffff;
+    }
+
+    .newsletter-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .newsletter-container p {
+        color: #cccccc;
+        margin-bottom: 40px;
+        font-size: 18px;
+    }
+
+    .newsletter-form {
+        width: 100%;
+    }
+
+    .newsletter-form input {
+        background-color: #000000;
+        border: 1px solid #cccccc;
+        color: #cccccc;
+        padding: 14px 18px;
+        font-size: 16px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .newsletter-form input::placeholder {
+        color: #666;
+    }
+
+    .newsletter-form button {
+        background-color: #000000;
+        border: 1px solid #cccccc;
+        color: #cccccc;
+        padding: 14px 24px;
+        font-size: 16px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .newsletter-form button:hover {
+        background-color: #111;
+    }
+
+    @media (max-width: 600px) {
+        body {
+            padding: 40px 20px;
+        }
+
+        header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        nav a {
+            margin-left: 0;
+            margin-right: 20px;
+        }
+    }
+</style>
+```
+
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">borkat</a>
+        <nav>
+            <a href="archive.html">Archive</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </nav>
+    </header>
+
+```
+<div class="newsletter-container">
+    <p>Enter your email to receive new writing.</p>
+    <form class="newsletter-form">
+        <input type="email" placeholder="your@email.com" required>
+        <button type="submit">Subscribe</button>
+    </form>
+</div>
+```
+
+</body>
+</html>
